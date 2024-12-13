@@ -1,0 +1,155 @@
+@font-face {
+  font-family: 'PlayfairDisplay', sans-serif;
+  src: url(fonts/PlayfairDisplay-Regular.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url(images/Фон.jpg);
+  font-family: 'test', sans-serif;
+}
+
+.header {
+  box-sizing: border-box;
+  padding-top: 24px;
+  top: 0px;
+  height: 73px;
+  width: 100vw;
+  border-bottom: 2px solid rgba(177, 177, 177, 0.16);
+  color: #fff;
+}
+
+.header-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 25px;
+  margin: 0 75px;
+}
+
+.flex-child-center {
+  display: flex;
+  /*выравнивание по вертикали*/
+  align-items: center; 
+  /*выравнивание по горизонтали*/
+  justify-content: center;
+  /* работает только с display: flex */
+}
+
+.logo {
+  font-size: 19px;
+  gap: 8px;
+}
+
+.logo:hover::after {
+  display: inline-block;
+  content: attr(data-title);
+  position: absolute;
+  left: 3.7%; top: 0%;
+}
+
+.navigation {
+  gap: 28px
+}
+
+.selection {
+  color: #fff;
+  text-decoration: none;
+}
+
+.selection:hover {
+  color: #E3C37A;
+  border-bottom: 2px solid #E3C37A;
+}
+
+.slogan {
+  margin-top: 65px;
+  margin-left: 75px;
+  font-weight: 100;
+  font-size: 56px;
+  text-transform: uppercase;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+.half {
+  width: 50vw;
+}
+
+.comment {
+  margin-top: 32px;
+  margin-left: 75px;
+  font-size: 18px;
+}
+
+.background-img {
+  background-image: url(images/pngegg-5\ 1.png);
+  background-repeat: no-repeat;
+}
+
+.request {
+  height: 87px;
+  margin-left: 75px;
+  margin-top: 58px;
+}
+
+.request p {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.request button {
+  margin-left: 8px;
+  color: #fff;
+  background: none;
+  height: 100%;
+  padding: 12px 24px;
+  font-size: 24px;  
+  /* border: 1px solid #E3C37A; */
+}
+
+.phone {
+  display: flex;
+  padding: 0 78px 0 12px;
+  height: 100%;
+  align-items: center; 
+  background-color: #fff;
+}
+
+textarea {
+  border: none;
+  vertical-align: middle;
+  resize: none;
+  width: 208px;
+  height: 22px;
+  font-size: 18px;
+}
+
+.main-info {
+  padding: 38px 28px 38px 28px;
+  background: rgba(35, 34, 40, 0.62);
+}
+
+.info-cards h2{
+  color: #E3C37A;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 52px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
